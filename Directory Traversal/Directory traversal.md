@@ -1,7 +1,3 @@
----
-quickshare-date: 2023-07-03 07:27:04
-quickshare-url: "https://noteshare.space/note/cljms0m7i1176801pjfab6tvt1#yED+u0Kc4gDPiVWN+amGBjXe+Jw+Be/5USUn+qLnWJc"
----
 ## Table of Contents
 
 - [[#File path traversal, simple case]]

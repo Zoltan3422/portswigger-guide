@@ -1,4 +1,4 @@
-## Table of Contents
+# Table of Contents
 
 - [[#CSRF vulnerability with no defenses]]
 - [[#CSRF where token validation depends on request method]]
@@ -9,7 +9,7 @@
 - [[#CSRF where Referer validation depends on header being present]]
 - [[#CSRF with broken Referer validation]]
 
-## CSRF vulnerability with no defenses
+# CSRF vulnerability with no defenses
 Reference: https://portswigger.net/web-security/csrf/lab-no-defenses
 
 <!-- omit in toc -->
@@ -33,7 +33,7 @@ Alternatively, if you're using Burp Suite Community Edition, use the following H
 4. To verify that the exploit works, try it on yourself by clicking "View exploit" and then check the resulting HTTP request and response.
 5. Click "Deliver to victim" to solve the lab.
 
-## CSRF where token validation depends on request method
+# CSRF where token validation depends on request method
 Reference: https://portswigger.net/web-security/csrf/lab-token-validation-depends-on-request-method
 
 <!-- omit in toc -->
@@ -59,7 +59,7 @@ Alternatively, if you're using Burp Suite Community Edition, use the following H
 6. To verify if the exploit will work, try it on yourself by clicking "View exploit" and checking the resulting HTTP request and response.
 7. Click "Deliver to victim" to solve the lab.
 
-## CSRF where token validation depends on token being present
+# CSRF where token validation depends on token being present
 Reference: https://portswigger.net/web-security/csrf/lab-token-validation-depends-on-token-being-present
 
 <!-- omit in toc -->
@@ -85,7 +85,7 @@ Alternatively, if you're using Burp Suite Community Edition, use the following H
 6. To verify if the exploit will work, try it on yourself by clicking "View exploit" and checking the resulting HTTP request and response.
 7. Click "Deliver to victim" to solve the lab.
 
-## CSRF where token is not tied to user session
+# CSRF where token is not tied to user session
 Reference: https://portswigger.net/web-security/csrf/lab-token-not-tied-to-user-session
 
 <!-- omit in toc -->
@@ -101,7 +101,7 @@ In this case there is a **CSRF token**, but it is not tied to user session. To e
 5. Create and host a proof of concept exploit as described in the solution to the CSRF vulnerability with no defenses lab. Note that the CSRF tokens are single-use, so you'll need to include a fresh one.
 6. Store the exploit, then click "Deliver to victim" to solve the lab.
 
-## CSRF where token is tied to non-session cookie
+# CSRF where token is tied to non-session cookie
 Reference: https://portswigger.net/web-security/csrf/lab-token-tied-to-non-session-cookie
 
 <!-- omit in toc -->
@@ -134,7 +134,7 @@ Now that we find a way to inject ``csrfKey`` into the victim's browser the PoC f
 ```
 10. Store the exploit, then click "Deliver to victim" to solve the lab.
 
-## CSRF where token is duplicated in cookie
+# CSRF where token is duplicated in cookie
 Reference: https://portswigger.net/web-security/csrf/lab-token-duplicated-in-cookie
 
 <!-- omit in toc -->
@@ -157,7 +157,7 @@ This lab is somehow similar to the one before. In this case the ``csrf`` is dupl
 ```
 7. Store the exploit, then click "Deliver to victim" to solve the lab.
 
-## CSRF where Referer validation depends on header being present
+# CSRF where Referer validation depends on header being present
 Reference: https://portswigger.net/web-security/csrf/lab-referer-validation-depends-on-header-being-present
 
 <!-- omit in toc -->
@@ -178,7 +178,7 @@ This lab has no ``csrf`` token, but using the generated PoC results in a "*Inval
 ```
 5. Store the exploit, then click "Deliver to victim" to solve the lab.
 
-## CSRF with broken Referer validation
+# CSRF with broken Referer validation
 Reference: https://portswigger.net/web-security/csrf/lab-referer-validation-broken
 
 <!-- omit in toc -->
@@ -213,3 +213,51 @@ Referrer-Policy: unsafe-url
 ```
 7. Note that unlike the normal Referer header, the word "referrer" must be spelled correctly in this case.
 Store the exploit, then click "Deliver to victim" to solve the lab.
+
+# SameSite Lax bypass via method override
+Reference: https://portswigger.net/web-security/csrf/bypassing-samesite-restrictions/lab-samesite-lax-bypass-via-method-override
+
+### Solution
+#### Bypass the SameSite restrictions
+
+1. Send the `POST /my-account/change-email` request to Burp Repeater.
+    
+2. In Burp Repeater, right-click on the request and select **Change request method**. Burp automatically generates an equivalent `GET` request.
+    
+3. Send the request. Observe that the endpoint only allows `POST` requests.
+    
+4. Try overriding the method by adding the `_method` parameter to the query string:
+    
+    `GET /my-account/change-email?email=foo%40web-security-academy.net&_method=POST HTTP/1.1`
+5. Send the request. Observe that this seems to have been accepted by the server.
+    
+6. In the browser, go to your account page and confirm that your email address has changed.
+    
+
+#### Craft an exploit
+
+1. In the browser, go to the exploit server.
+    
+2. In the **Body** section, create an HTML/JavaScript payload that induces the viewer's browser to issue the malicious `GET` request. Remember that this must cause a top-level navigation in order for the session cookie to be included. The following is one possible approach:
+    
+    `<script> document.location = "https://YOUR-LAB-ID.web-security-academy.net/my-account/change-email?email=pwned@web-security-academy.net&_method=POST"; </script>`
+3. Store and view the exploit yourself. Confirm that this has successfully changed your email address on the target site.
+    
+4. Change the email address in your exploit so that it doesn't match your own.
+    
+5. Deliver the exploit to the victim to solve the lab.
+
+# SameSite Strict bypass via client-side redirect
+Reference: https://portswigger.net/web-security/csrf/bypassing-samesite-restrictions/lab-samesite-strict-bypass-via-client-side-redirect
+
+### Solution
+
+# SameSite Strict bypass via sibling domain
+Reference: https://portswigger.net/web-security/csrf/bypassing-samesite-restrictions/lab-samesite-strict-bypass-via-sibling-domain
+
+### Solution
+
+# SameSite Lax bypass via cookie refresh
+Reference: https://portswigger.net/web-security/csrf/bypassing-samesite-restrictions/lab-samesite-strict-bypass-via-cookie-refresh
+
+### Solution
