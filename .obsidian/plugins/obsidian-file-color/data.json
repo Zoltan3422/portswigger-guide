@@ -1,0 +1,324 @@
+{
+  "palette": [
+    {
+      "id": "dEV4Cva_HT1SqJP5wrexc",
+      "name": "Folder",
+      "value": "#d0793e"
+    },
+    {
+      "id": "D_I7tr45Mqz4J6SzK3rfm",
+      "name": "Notes",
+      "value": "#00c206"
+    },
+    {
+      "id": "T00Sptzfiyh8aL6ymXTnO",
+      "name": "lib",
+      "value": "#e6c700"
+    },
+    {
+      "id": "mLLJJw9pJH3zr0Uq5yt6v",
+      "name": "hint",
+      "value": "#00eeff"
+    },
+    {
+      "id": "kxygAMoeaiCbPoWylAIj7",
+      "name": "exploit",
+      "value": "#b3a700"
+    },
+    {
+      "id": "B1nbF8T8AagLsLKgFosFE",
+      "name": "Project",
+      "value": "#ff0019"
+    }
+  ],
+  "fileColors": [
+    {
+      "path": "Portswigger-guide/Access-control",
+      "color": "dEV4Cva_HT1SqJP5wrexc"
+    },
+    {
+      "path": "Portswigger-guide/Authentication",
+      "color": "dEV4Cva_HT1SqJP5wrexc"
+    },
+    {
+      "path": "Portswigger-guide/Business-logic",
+      "color": "dEV4Cva_HT1SqJP5wrexc"
+    },
+    {
+      "path": "Portswigger-guide/Clickjacking",
+      "color": "dEV4Cva_HT1SqJP5wrexc"
+    },
+    {
+      "path": "Portswigger-guide/CORS",
+      "color": "dEV4Cva_HT1SqJP5wrexc"
+    },
+    {
+      "path": "Portswigger-guide/CSRF",
+      "color": "dEV4Cva_HT1SqJP5wrexc"
+    },
+    {
+      "path": "Portswigger-guide/Directory Traversal",
+      "color": "dEV4Cva_HT1SqJP5wrexc"
+    },
+    {
+      "path": "Portswigger-guide/DOM-based",
+      "color": "dEV4Cva_HT1SqJP5wrexc"
+    },
+    {
+      "path": "Portswigger-guide/File Upload Vulnerabilities",
+      "color": "dEV4Cva_HT1SqJP5wrexc"
+    },
+    {
+      "path": "Portswigger-guide/Http Host Header",
+      "color": "dEV4Cva_HT1SqJP5wrexc"
+    },
+    {
+      "path": "Portswigger-guide/Http Request Smuggling",
+      "color": "dEV4Cva_HT1SqJP5wrexc"
+    },
+    {
+      "path": "Portswigger-guide/Information Disclosure",
+      "color": "dEV4Cva_HT1SqJP5wrexc"
+    },
+    {
+      "path": "Portswigger-guide/OAuth Authentication",
+      "color": "dEV4Cva_HT1SqJP5wrexc"
+    },
+    {
+      "path": "Portswigger-guide/OS Command Injection",
+      "color": "dEV4Cva_HT1SqJP5wrexc"
+    },
+    {
+      "path": "Portswigger-guide/Server side template injection",
+      "color": "dEV4Cva_HT1SqJP5wrexc"
+    },
+    {
+      "path": "Portswigger-guide/SQL Injection",
+      "color": "dEV4Cva_HT1SqJP5wrexc"
+    },
+    {
+      "path": "Portswigger-guide/SSRF",
+      "color": "dEV4Cva_HT1SqJP5wrexc"
+    },
+    {
+      "path": "Portswigger-guide/Web cache poisoning",
+      "color": "dEV4Cva_HT1SqJP5wrexc"
+    },
+    {
+      "path": "Portswigger-guide/WebSockets",
+      "color": "dEV4Cva_HT1SqJP5wrexc"
+    },
+    {
+      "path": "Portswigger-guide/XSS",
+      "color": "dEV4Cva_HT1SqJP5wrexc"
+    },
+    {
+      "path": "Portswigger-guide/XXE",
+      "color": "dEV4Cva_HT1SqJP5wrexc"
+    },
+    {
+      "path": "Portswigger-guide/Access-control/Access-control.md",
+      "color": "D_I7tr45Mqz4J6SzK3rfm"
+    },
+    {
+      "path": "Portswigger-guide/Authentication/Authentication.md",
+      "color": "D_I7tr45Mqz4J6SzK3rfm"
+    },
+    {
+      "path": "Portswigger-guide/Business-logic/Business-logic.md",
+      "color": "D_I7tr45Mqz4J6SzK3rfm"
+    },
+    {
+      "path": "Portswigger-guide/Clickjacking/Clickjacking.md",
+      "color": "D_I7tr45Mqz4J6SzK3rfm"
+    },
+    {
+      "path": "Portswigger-guide/CORS/CORS.md",
+      "color": "D_I7tr45Mqz4J6SzK3rfm"
+    },
+    {
+      "path": "Portswigger-guide/CSRF/CSRF.md",
+      "color": "D_I7tr45Mqz4J6SzK3rfm"
+    },
+    {
+      "path": "Portswigger-guide/Directory Traversal/Directory traversal.md",
+      "color": "D_I7tr45Mqz4J6SzK3rfm"
+    },
+    {
+      "path": "Portswigger-guide/DOM-based/DOM-based.md",
+      "color": "D_I7tr45Mqz4J6SzK3rfm"
+    },
+    {
+      "path": "Portswigger-guide/File Upload Vulnerabilities/File upload vulnerabilities.md",
+      "color": "D_I7tr45Mqz4J6SzK3rfm"
+    },
+    {
+      "path": "Portswigger-guide/File Upload Vulnerabilities/exploits",
+      "color": "T00Sptzfiyh8aL6ymXTnO"
+    },
+    {
+      "path": "Portswigger-guide/File Upload Vulnerabilities/exploits/file_get_contents.php.md",
+      "color": "kxygAMoeaiCbPoWylAIj7"
+    },
+    {
+      "path": "Portswigger-guide/Http Host Header/Http host header.md",
+      "color": "D_I7tr45Mqz4J6SzK3rfm"
+    },
+    {
+      "path": "Portswigger-guide/Http Request Smuggling/lib",
+      "color": "T00Sptzfiyh8aL6ymXTnO"
+    },
+    {
+      "path": "Portswigger-guide/Http Request Smuggling/lib/countchar.py.md",
+      "color": "kxygAMoeaiCbPoWylAIj7"
+    },
+    {
+      "path": "Portswigger-guide/Http Request Smuggling/lib/request.txt.md",
+      "color": "kxygAMoeaiCbPoWylAIj7"
+    },
+    {
+      "path": "Portswigger-guide/Http Request Smuggling/Http request smuggling.md",
+      "color": "D_I7tr45Mqz4J6SzK3rfm"
+    },
+    {
+      "path": "Portswigger-guide/Http Request Smuggling/Tips.md",
+      "color": "mLLJJw9pJH3zr0Uq5yt6v"
+    },
+    {
+      "path": "Portswigger-guide/Information Disclosure/Information Disclosure.md",
+      "color": "D_I7tr45Mqz4J6SzK3rfm"
+    },
+    {
+      "path": "Portswigger-guide/OAuth Authentication/Oauth authentication.md",
+      "color": "D_I7tr45Mqz4J6SzK3rfm"
+    },
+    {
+      "path": "Portswigger-guide/OS Command Injection/Os command  injection.md",
+      "color": "D_I7tr45Mqz4J6SzK3rfm"
+    },
+    {
+      "path": "Portswigger-guide/Server side template injection/Server side template injection.md",
+      "color": "D_I7tr45Mqz4J6SzK3rfm"
+    },
+    {
+      "path": "Portswigger-guide/Server side template injection/TIPS.md",
+      "color": "mLLJJw9pJH3zr0Uq5yt6v"
+    },
+    {
+      "path": "Portswigger-guide/SQL Injection/cheatsheet.md",
+      "color": "mLLJJw9pJH3zr0Uq5yt6v"
+    },
+    {
+      "path": "Portswigger-guide/SQL Injection/SQL Injection.md",
+      "color": "D_I7tr45Mqz4J6SzK3rfm"
+    },
+    {
+      "path": "Portswigger-guide/SSRF/SSRF.md",
+      "color": "D_I7tr45Mqz4J6SzK3rfm"
+    },
+    {
+      "path": "Portswigger-guide/Web cache poisoning/TIPS.md",
+      "color": "mLLJJw9pJH3zr0Uq5yt6v"
+    },
+    {
+      "path": "Portswigger-guide/Web cache poisoning/Web cache poisoning.md",
+      "color": "D_I7tr45Mqz4J6SzK3rfm"
+    },
+    {
+      "path": "Portswigger-guide/WebSockets/WebSockets.md",
+      "color": "D_I7tr45Mqz4J6SzK3rfm"
+    },
+    {
+      "path": "Portswigger-guide/XSS/Portswigger-cheatsheet.txt.md",
+      "color": "mLLJJw9pJH3zr0Uq5yt6v"
+    },
+    {
+      "path": "Portswigger-guide/XSS/XSS.md",
+      "color": "D_I7tr45Mqz4J6SzK3rfm"
+    },
+    {
+      "path": "Portswigger-guide/XXE/PAYLOADS.md",
+      "color": "kxygAMoeaiCbPoWylAIj7"
+    },
+    {
+      "path": "Portswigger-guide/XXE/XXE.md",
+      "color": "D_I7tr45Mqz4J6SzK3rfm"
+    },
+    {
+      "path": "Portswigger-guide/Clickjacking/exploits",
+      "color": "T00Sptzfiyh8aL6ymXTnO"
+    },
+    {
+      "path": "Portswigger-guide/Clickjacking/exploits/Base.md",
+      "color": "kxygAMoeaiCbPoWylAIj7"
+    },
+    {
+      "path": "Portswigger-guide/Clickjacking/exploits/Csrf token protection.md",
+      "color": "kxygAMoeaiCbPoWylAIj7"
+    },
+    {
+      "path": "Portswigger-guide/Clickjacking/exploits/Dom based xss.md",
+      "color": "kxygAMoeaiCbPoWylAIj7"
+    },
+    {
+      "path": "Portswigger-guide/Clickjacking/exploits/Frame buster script.md",
+      "color": "kxygAMoeaiCbPoWylAIj7"
+    },
+    {
+      "path": "Portswigger-guide/Clickjacking/exploits/Input data prefilled.md",
+      "color": "kxygAMoeaiCbPoWylAIj7"
+    },
+    {
+      "path": "Portswigger-guide/Clickjacking/exploits/Multistep.md",
+      "color": "kxygAMoeaiCbPoWylAIj7"
+    },
+    {
+      "path": "Alfonz",
+      "color": "B1nbF8T8AagLsLKgFosFE"
+    },
+    {
+      "path": "Alfonz/ports",
+      "color": "dEV4Cva_HT1SqJP5wrexc"
+    },
+    {
+      "path": "Alfonz/ports/80_443/endpoints",
+      "color": "dEV4Cva_HT1SqJP5wrexc"
+    },
+    {
+      "path": "Alfonz/ports/80_443",
+      "color": "dEV4Cva_HT1SqJP5wrexc"
+    },
+    {
+      "path": "Portswigger-guide",
+      "color": "mLLJJw9pJH3zr0Uq5yt6v"
+    },
+    {
+      "path": "Alfonz/ports/80_443/burp",
+      "color": "dEV4Cva_HT1SqJP5wrexc"
+    },
+    {
+      "path": "Alfonz/ports/80_443/burp/BurpActiveScans.md",
+      "color": "kxygAMoeaiCbPoWylAIj7"
+    },
+    {
+      "path": "Alfonz/ports/80_443/endpoints/Vulnerable endpoints.md",
+      "color": "D_I7tr45Mqz4J6SzK3rfm"
+    },
+    {
+      "path": "Portswigger-guide/Insecure deserialization",
+      "color": "dEV4Cva_HT1SqJP5wrexc"
+    },
+    {
+      "path": "Portswigger-guide/Insecure deserialization/Insecure deserialization.md",
+      "color": "D_I7tr45Mqz4J6SzK3rfm"
+    },
+    {
+      "path": "Portswigger-guide/JWT/Jwt.md",
+      "color": "D_I7tr45Mqz4J6SzK3rfm"
+    },
+    {
+      "path": "Portswigger-guide/JWT",
+      "color": "dEV4Cva_HT1SqJP5wrexc"
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+.workspace-leaf-content[data-type="file-explorer"] .nav-files-container .nav-folder-title.file-color-file,
+.workspace-leaf-content[data-type="file-explorer"] .nav-files-container .nav-file-title.file-color-file {
+  color: var(--file-color-color);
+}
