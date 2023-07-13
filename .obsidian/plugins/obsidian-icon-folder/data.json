@@ -6,11 +6,11 @@
     "emojiStyle": "none",
     "iconColor": null,
     "recentlyUsedIcons": [
+      "RiErrorWarningFill",
       "TiNotes",
       "TiCode",
       "FasBookOpen",
-      "RiFolderFill",
-      "LiFolder"
+      "RiFolderFill"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -93,5 +93,10 @@
   "Portswigger-guide/Insecure deserialization": "RiFolderFill",
   "Portswigger-guide/Insecure deserialization/Insecure deserialization.md": "TiNotes",
   "Portswigger-guide/JWT/Jwt.md": "TiNotes",
-  "Portswigger-guide/JWT": "RiFolderFill"
+  "Portswigger-guide/JWT": "RiFolderFill",
+  "Portswigger-guide/Prototype Pollution": "RiFolderFill",
+  "Portswigger-guide/Prototype Pollution/Prototype pollution.md": "TiNotes",
+  "Portswigger-guide/GraphQL": "RiFolderFill",
+  "Portswigger-guide/GraphQL/Graphql.md": "TiNotes",
+  "Alfonz/VulnsSoFar.md": "RiErrorWarningFill"
 }

@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "d6046ffebb42a5ff",
+        "id": "862020b52c6bead9",
         "type": "tabs",
         "children": [
           {
-            "id": "408e926df2d71e00",
+            "id": "c946de34b3a7bad5",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Portswigger-guide/JWT/Jwt.md",
+                "file": "Alfonz/ports/80_443/nikto.md",
                 "mode": "preview",
                 "source": true
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Portswigger-guide/JWT/Jwt.md",
+                "file": "Alfonz/ports/80_443/nikto.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Portswigger-guide/JWT/Jwt.md",
+                "file": "Alfonz/ports/80_443/nikto.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Portswigger-guide/JWT/Jwt.md"
+                "file": "Alfonz/ports/80_443/nikto.md"
               }
             }
           },
@@ -157,45 +157,45 @@
       "markdown-importer:Open format converter": false
     }
   },
-  "active": "408e926df2d71e00",
+  "active": "c946de34b3a7bad5",
   "lastOpenFiles": [
-    "Portswigger-guide/Http Host Header/Http host header.md",
-    "Portswigger-guide/WebSockets/WebSockets.md",
-    "Portswigger-guide/JWT/Jwt.md",
-    "Portswigger-guide/Business-logic/Business-logic.md",
-    "Portswigger-guide/CSRF/CSRF.md",
-    "Portswigger-guide/Insecure deserialization/Insecure deserialization.md",
-    "Portswigger-guide/File Upload Vulnerabilities/File upload vulnerabilities.md",
-    "Portswigger-guide/JWT",
-    "Portswigger-guide/OAuth Authentication/Oauth authentication.md",
-    "Portswigger-guide/Authentication/Authentication.md",
-    "Portswigger-guide/Web cache poisoning/Web cache poisoning.md",
-    "Portswigger-guide/Access-control/Access-control.md",
-    "Portswigger-guide/Directory Traversal/Directory traversal.md",
-    "Portswigger-guide/Server side template injection/Server side template injection.md",
-    "Portswigger-guide/OS Command Injection/Os command  injection.md",
-    "Portswigger-guide/Http Request Smuggling/Http request smuggling.md",
-    "Portswigger-guide/Http Request Smuggling/lib/countchar.py.md",
-    "Portswigger-guide/Http Request Smuggling/lib/request.txt.md",
-    "Portswigger-guide/DOM-based/DOM-based.md",
-    "Portswigger-guide/SSRF/SSRF.md",
-    "Portswigger-guide/XXE/XXE.md",
-    "Portswigger-guide/CORS/CORS.md",
-    "Alfonz/ports/80_443/burp/BurpActiveScans.md",
     "Portswigger-guide/Home.md",
-    "Portswigger-guide/Insecure deserialization",
-    "Alfonz/ports/80_443/endpoints/Vulnerable endpoints.md",
+    "Alfonz/ports/80_443/SQLi.md",
+    "Alfonz/ports/80_443/VulnDB.md",
+    "Alfonz/ports/80_443/nikto.md",
+    "Alfonz/ports/OpenPorts.md",
+    "Alfonz/ports/Nmap scan.md",
+    "Alfonz/Notes.md",
+    "Portswigger-guide/SQL Injection/SQL Injection.md",
+    "Portswigger-guide/SQL Injection/cheatsheet.md",
+    "Portswigger-guide/OAuth Authentication/Oauth authentication.md",
+    "Portswigger-guide/Web cache poisoning/TIPS.md",
+    "Portswigger-guide/Web cache poisoning/Web cache poisoning.md",
+    "Alfonz/VulnsSoFar.md",
+    "Portswigger-guide/JWT/Jwt.md",
+    "Portswigger-guide/Authentication/Authentication.md",
+    "Portswigger-guide/Business-logic/Business-logic.md",
+    "Portswigger-guide/PortSwigger-Base.md",
+    "Portswigger-guide/Directory Traversal/Directory traversal.md",
+    "Portswigger-guide/SSRF/SSRF.md",
+    "Portswigger-guide/WebSockets/WebSockets.md",
+    "Portswigger-guide/Server side template injection/Server side template injection.md",
     "Portswigger-guide/XSS/XSS.md",
+    "Portswigger-guide/XXE/XXE.md",
+    "Portswigger-guide/Server side template injection/TIPS.md",
+    "Portswigger-guide/Prototype Pollution/Prototype pollution.md",
+    "Portswigger-guide/OS Command Injection/Os command  injection.md",
+    "Portswigger-guide/GraphQL/Untitled",
+    "Portswigger-guide/GraphQL",
+    "Portswigger-guide/Prototype Pollution",
+    "Portswigger-guide/JWT",
+    "Portswigger-guide/Insecure deserialization",
     "Pasted image 20230706104132.png",
-    "Alfonz/ports/80_443/endpoints/gobuster.md",
     "Pasted image 20230706095544.png",
     "Alfonz/ports/80_443/burp",
     "Alfonz/ports/80_443",
     "Alfonz/ports/80_443/endpoints",
     "Alfonz/ports",
-    "Alfonz",
-    "Portswigger-guide",
-    "Portswigger-guide/Http Request Smuggling/lib",
-    "Portswigger-guide/XXE"
+    "Alfonz"
   ]
 }

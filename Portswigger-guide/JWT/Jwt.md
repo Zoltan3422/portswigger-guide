@@ -1,5 +1,5 @@
 <!-- omit in toc -->
-## Table of Contents
+# Table of Contents
 
 - [[#JWT authentication bypass via unverified signature]]
 - [[#JWT authentication bypass via flawed signature verification]]
