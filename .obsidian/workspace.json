@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "862020b52c6bead9",
+        "id": "5727cb43705c4b3f",
         "type": "tabs",
         "children": [
           {
-            "id": "c946de34b3a7bad5",
+            "id": "a804a9ccaea210ee",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Alfonz/ports/80_443/nikto.md",
+                "file": "Portswigger-guide/XXE/XXE.md",
                 "mode": "preview",
                 "source": true
               }
@@ -69,7 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 310.5
+    "width": 224.5
   },
   "right": {
     "id": "fd7ec17a1c3be3c8",
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Alfonz/ports/80_443/nikto.md",
+                "file": "Portswigger-guide/XXE/XXE.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Alfonz/ports/80_443/nikto.md",
+                "file": "Portswigger-guide/XXE/XXE.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Alfonz/ports/80_443/nikto.md"
+                "file": "Portswigger-guide/XXE/XXE.md"
               }
             }
           },
@@ -157,34 +157,34 @@
       "markdown-importer:Open format converter": false
     }
   },
-  "active": "c946de34b3a7bad5",
+  "active": "a804a9ccaea210ee",
   "lastOpenFiles": [
-    "Portswigger-guide/Home.md",
-    "Alfonz/ports/80_443/SQLi.md",
-    "Alfonz/ports/80_443/VulnDB.md",
-    "Alfonz/ports/80_443/nikto.md",
-    "Alfonz/ports/OpenPorts.md",
-    "Alfonz/ports/Nmap scan.md",
-    "Alfonz/Notes.md",
-    "Portswigger-guide/SQL Injection/SQL Injection.md",
-    "Portswigger-guide/SQL Injection/cheatsheet.md",
-    "Portswigger-guide/OAuth Authentication/Oauth authentication.md",
-    "Portswigger-guide/Web cache poisoning/TIPS.md",
-    "Portswigger-guide/Web cache poisoning/Web cache poisoning.md",
-    "Alfonz/VulnsSoFar.md",
-    "Portswigger-guide/JWT/Jwt.md",
-    "Portswigger-guide/Authentication/Authentication.md",
-    "Portswigger-guide/Business-logic/Business-logic.md",
-    "Portswigger-guide/PortSwigger-Base.md",
-    "Portswigger-guide/Directory Traversal/Directory traversal.md",
-    "Portswigger-guide/SSRF/SSRF.md",
-    "Portswigger-guide/WebSockets/WebSockets.md",
-    "Portswigger-guide/Server side template injection/Server side template injection.md",
     "Portswigger-guide/XSS/XSS.md",
     "Portswigger-guide/XXE/XXE.md",
-    "Portswigger-guide/Server side template injection/TIPS.md",
+    "Portswigger-guide/XSS/Portswigger-cheatsheet.txt.md",
+    "Portswigger-guide/Home.md",
     "Portswigger-guide/Prototype Pollution/Prototype pollution.md",
-    "Portswigger-guide/OS Command Injection/Os command  injection.md",
+    "Portswigger-guide/Web cache poisoning/Web cache poisoning.md",
+    "Portswigger-guide/WebSockets/WebSockets.md",
+    "Portswigger-guide/XXE/PAYLOADS.md",
+    "Portswigger-guide/SQL Injection/SQL Injection.md",
+    "Portswigger-guide/SSRF/SSRF.md",
+    "Portswigger-guide/Server side template injection/Server side template injection.md",
+    "Alfonz/VulnsSoFar.md",
+    "Portswigger-guide/PortSwigger-Base.md",
+    "Portswigger-guide/Authentication/Authentication.md",
+    "Alfonz/ports/80_443/nikto.md",
+    "Alfonz/ports/80_443/SQLi.md",
+    "Alfonz/ports/80_443/VulnDB.md",
+    "Alfonz/ports/OpenPorts.md",
+    "Alfonz/Notes.md",
+    "Portswigger-guide/Server side template injection/TIPS.md",
+    "Alfonz/ports/80_443/endpoints/gobuster.md",
+    "Alfonz/ports/80_443/endpoints/Endpoints.md",
+    "Alfonz/ports/80_443/burp/BurpActiveScans.md",
+    "Alfonz/ports/Nmap scan.md",
+    "Portswigger-guide/Http Host Header/Http host header.md",
+    "Portswigger-guide/CORS/CORS.md",
     "Portswigger-guide/GraphQL/Untitled",
     "Portswigger-guide/GraphQL",
     "Portswigger-guide/Prototype Pollution",
