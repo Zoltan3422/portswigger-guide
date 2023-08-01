@@ -15,6 +15,7 @@
 - [[#HTTP 2 request smuggling via CRLF injection]]
 - [[#HTTP 2 request splitting via CRLF injection]]
 - [[#CL 0 request smuggling]]
+-  _**[[#Payloads]]**_
 
 # HTTP request smuggling, basic CL.TE vulnerability
 Reference: https://portswigger.net/web-security/request-smuggling/lab-basic-cl-te
@@ -610,3 +611,5 @@ title: Solution
     ~~~
 ```
 
+# Payloads
+![[HttpRequestSmugglingPayloads]]

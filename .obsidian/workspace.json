@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Portswigger-guide/XXE/XXE.md",
+                "file": "Portswigger-guide/PortSwigger-Base.md",
                 "mode": "preview",
                 "source": true
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Portswigger-guide/XXE/XXE.md",
+                "file": "Portswigger-guide/PortSwigger-Base.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Portswigger-guide/XXE/XXE.md",
+                "file": "Portswigger-guide/PortSwigger-Base.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Portswigger-guide/XXE/XXE.md"
+                "file": "Portswigger-guide/PortSwigger-Base.md"
               }
             }
           },
@@ -159,33 +159,33 @@
   },
   "active": "102981ae839bbc27",
   "lastOpenFiles": [
+    "Portswigger-guide/CORS/CORS.md",
+    "Portswigger-guide/PortSwigger-Base.md",
+    "Portswigger-guide/Clickjacking/Clickjacking.md",
+    "Portswigger-guide/Directory Traversal/Directory traversal.md",
+    "Portswigger-guide/Payloads/SQLInjection.md",
+    "Portswigger-guide/Payloads/FilePathTraversal.md",
+    "Portswigger-guide/Payloads/CookieStealer(XSS).md",
     "Portswigger-guide/XXE/PAYLOADS.md",
     "Portswigger-guide/XXE/XXE.md",
-    "Portswigger-guide/Server side template injection/Server side template injection.md",
-    "Portswigger-guide/SSRF/SSRF.md",
+    "Portswigger-guide/SQL Injection/cheatsheet.md",
     "Portswigger-guide/SQL Injection/SQL Injection.md",
-    "Portswigger-guide/Insecure deserialization/Insecure deserialization.md",
-    "Portswigger-guide/Payloads/FilePathTraversal.md",
-    "Portswigger-guide/XSS/XSS.md",
-    "Portswigger-guide/XSS/Portswigger-cheatsheet.txt.md",
-    "Portswigger-guide/Payloads/SSRFPayloads.md",
-    "Portswigger-guide/Directory Traversal/Directory traversal.md",
-    "Portswigger-guide/Payloads/CookieStealer(XSS).md",
-    "Portswigger-guide/Payloads/SSTIPayloads.md",
-    "Portswigger-guide/Payloads/XXEPayloads.md",
-    "Portswigger-guide/Payloads/SQLInjection.md",
-    "Portswigger-guide/Payloads/RCE.md",
-    "Portswigger-guide/Payloads/InsecureDeserialization.md",
-    "Portswigger-guide/Home.md",
-    "Portswigger-guide/Payloads",
+    "Portswigger-guide/Server side template injection/TIPS.md",
     "Portswigger-guide/Http Request Smuggling/Http request smuggling.md",
     "Portswigger-guide/File Upload Vulnerabilities/File upload vulnerabilities.md",
+    "Portswigger-guide/JWT/Jwt.md",
+    "Portswigger-guide/Payloads/HttpRequestSmugglingPayloads.md",
+    "Portswigger-guide/Payloads/InsecureDeserialization.md",
+    "Portswigger-guide/Http Request Smuggling/lib/request.txt.md",
+    "Portswigger-guide/Http Request Smuggling/lib/countchar.py.md",
     "Portswigger-guide/File Upload Vulnerabilities/exploits/file_get_contents.php.md",
-    "Portswigger-guide/PortSwigger-Base.md",
-    "Portswigger-guide/Business-logic/Business-logic.md",
-    "Portswigger-guide/Prototype Pollution/Prototype pollution.md",
-    "Portswigger-guide/Web cache poisoning/Web cache poisoning.md",
-    "Portswigger-guide/WebSockets/WebSockets.md",
+    "Portswigger-guide/Clickjacking/exploits/Base.md",
+    "Portswigger-guide/Clickjacking/exploits/Csrf token protection.md",
+    "Portswigger-guide/Clickjacking/exploits/Dom based xss.md",
+    "Portswigger-guide/Clickjacking/exploits/Frame buster script.md",
+    "Portswigger-guide/Clickjacking/exploits/Input data prefilled.md",
+    "Portswigger-guide/Clickjacking/exploits/Multistep.md",
+    "Portswigger-guide/Payloads",
     "Portswigger-guide/GraphQL/Untitled",
     "Portswigger-guide/GraphQL",
     "Portswigger-guide/Prototype Pollution",

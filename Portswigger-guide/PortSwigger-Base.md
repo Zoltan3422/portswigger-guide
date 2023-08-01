@@ -30,26 +30,26 @@ The tools needed (other than Burp Pro) to complete the labs.
 
 | Category | Stage 1 | Stage 2 | Stage 3 |
 | --- | --- | --- | --- |
-| SQL Injection |  | ✔️ | ✔️ |
-| Cross-site scripting | ✔️ | ✔️ |  |
-| Cross-site request forgery (CSRF) | ✔️ | ✔️ |  |
-| Clickjacking | ✔️ | ✔️ |  |
-| DOM-based vulnerabilities | ✔️ | ✔️ |  |
-| Cross-origin resource sharing (CORS) | ✔️ | ✔️ |  |
-| XML external entity (XXE) injection |  |  | ✔️ |
-| Server-side request forgery (SSRF) |  |  | ✔️ |
-| HTTP request smuggling | ✔️ | ✔️ |  |
-| OS command injection |  |  | ✔️ |
-| Server-side template injection |  |  | ✔️ |
-| Directory traversal |  |  | ✔️ |
-| Access control vulnerabilities | ✔️ | ✔️ |  |
-| Authentication | ✔️ | ✔️ |  |
-| Web cache poisoning | ✔️ | ✔️ |  |
-| Insecure deserialization |  |  | ✔️ |
-| HTTP Host header attacks | ✔️ | ✔️ |  |
-| OAuth authentication | ✔️ | ✔️ |  |
-| File upload vulnerabilities |  |  | ✔️ |
-| JWT | ✔️ | ✔️ |  |
+| [[SQL Injection]] |  | [[SQL Injection \| ✔️]] | [[SQL Injection \| ✔️]] |
+| [[XSS]] | [[XSS \| ✔️]] | [[XSS \| ✔️]] |  |
+| [[CSRF]] | [[CSRF \| ✔️]] | [[CSRF \| ✔️]] |  |
+| [[Clickjacking]] | [[Clickjacking \| ✔️]] | [[Clickjacking \| ✔️]] |  |
+| [[DOM-based]] | [[DOM-based \| ✔️]] | [[DOM-based \| ✔️]] |  |
+| [[CORS]] | [[CORS \| ✔️]] | [[CORS \| ✔️]] |  |
+| [[XXE]] |  |  | [[XXE \| ✔️]] |
+| [[SSRF]] |  |  | [[SSRF \| ✔️]] |
+| [[HTTP request smuggling]] | [[Http request smuggling \| ✔️]] | [[Http request smuggling \| ✔️]] |  |
+| [[Os command  injection]] |  |  | [[Os command injection \| ✔️]] |
+| [[Server side template injection]] |  |  | [[Server side template injection \| ✔️]] |
+| [[Directory traversal]] |  |  | [[Directory traversal \| ✔️]] |
+| [[Access-control]] | [[Access-control \| ✔️]] | [[Access-control \| ✔️]] |  |
+| [[Authentication]] | [[Authentication \| ✔️]] | [[Authentication \| ✔️]] |  |
+| [[Web cache poisoning]] | [[Web cache poisoning \| ✔️]] | [[Web cache poisoning \| ✔️]] |  |
+| [[Insecure deserialization]] |  |  | [[Insecure deserialization \| ✔️]] |
+| [[Http Host header]] | [[Http host header \| ✔️]] | [[Http host header \| ✔️]] |  |
+| [[OAuth authentication]] | [[Oauth authentication \| ✔️]] | [[Oauth authentication \| ✔️]] |  |
+| [[File upload vulnerabilities]] |  |  | [[File upload vulnerabilities \| ✔️]] |
+| [[JWT]] | [[Jwt \| ✔️]] | [[Jwt \| ✔️]] |  |
 
 ## 💭 Cheat sheets
 
@@ -68,3 +68,7 @@ The tools needed (other than Burp Pro) to complete the labs.
 - Turbo Intruder
 - Java Deserialization Scanner
 - ActiveScan++
+
+### GitHub repo's used
+https://github.com/botesjuan/Burp-Suite-Certified-Practitioner-Exam-Study/tree/main/payloads
+

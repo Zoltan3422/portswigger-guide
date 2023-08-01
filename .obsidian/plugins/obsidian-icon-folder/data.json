@@ -49,7 +49,6 @@
   "Portswigger-guide/Information Disclosure/Information Disclosure.md": "TiNotes",
   "Portswigger-guide/Http Request Smuggling": "TiFolderFilled",
   "Portswigger-guide/Http Request Smuggling/Http request smuggling.md": "TiNotes",
-  "Portswigger-guide/Http Request Smuggling/Tips.md": "TiHelp",
   "Portswigger-guide/Http Request Smuggling/lib": "LiLibrary",
   "Portswigger-guide/Http Request Smuggling/lib/countchar.py.md": "LiCode2",
   "Portswigger-guide/Http Request Smuggling/lib/request.txt.md": "LiCode2",
@@ -107,5 +106,6 @@
   "Portswigger-guide/Payloads/SQLInjection.md": "TiCode",
   "Portswigger-guide/Payloads/SSRFPayloads.md": "TiCode",
   "Portswigger-guide/Payloads/SSTIPayloads.md": "TiCode",
-  "Portswigger-guide/Payloads/XXEPayloads.md": "TiCode"
+  "Portswigger-guide/Payloads/XXEPayloads.md": "TiCode",
+  "Portswigger-guide/Payloads/HttpRequestSmugglingPayloads.md": "TiCode"
 }

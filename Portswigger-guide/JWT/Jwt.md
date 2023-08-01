@@ -1,4 +1,3 @@
-<!-- omit in toc -->
 # Table of Contents
 
 - [[#JWT authentication bypass via unverified signature]]
