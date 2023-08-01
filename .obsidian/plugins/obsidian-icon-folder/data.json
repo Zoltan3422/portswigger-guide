@@ -98,5 +98,14 @@
   "Portswigger-guide/Prototype Pollution/Prototype pollution.md": "TiNotes",
   "Portswigger-guide/GraphQL": "RiFolderFill",
   "Portswigger-guide/GraphQL/Graphql.md": "TiNotes",
-  "Alfonz/VulnsSoFar.md": "RiErrorWarningFill"
+  "Alfonz/VulnsSoFar.md": "RiErrorWarningFill",
+  "Portswigger-guide/Payloads": "RiFolderFill",
+  "Portswigger-guide/Payloads/CookieStealer(XSS).md": "TiCode",
+  "Portswigger-guide/Payloads/FilePathTraversal.md": "TiCode",
+  "Portswigger-guide/Payloads/InsecureDeserialization.md": "TiCode",
+  "Portswigger-guide/Payloads/RCE.md": "TiCode",
+  "Portswigger-guide/Payloads/SQLInjection.md": "TiCode",
+  "Portswigger-guide/Payloads/SSRFPayloads.md": "TiCode",
+  "Portswigger-guide/Payloads/SSTIPayloads.md": "TiCode",
+  "Portswigger-guide/Payloads/XXEPayloads.md": "TiCode"
 }

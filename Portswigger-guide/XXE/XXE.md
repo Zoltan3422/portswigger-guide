@@ -8,6 +8,7 @@
 - [[#Exploiting blind XXE to retrieve data via error messages]]
 - [[#Exploiting XInclude to retrieve files]]
 - [[#Exploiting XXE via image file upload]]
+- _**[[#Payloads]]**_
 
 ## Exploiting XXE using external entities to retrieve files
 Reference: https://portswigger.net/web-security/xxe/lab-exploiting-xxe-to-retrieve-files
@@ -149,3 +150,7 @@ title: Solution
 2. Post a comment on a blog post, and upload this image as an avatar.
 3. When you view your comment, you should see the contents of the ``/etc/hostname`` file in your image. Use the "Submit solution" button to submit the value of the server hostname.
 ```
+
+# Payloads
+![[PAYLOADS]]
+![[XXEPayloads]]

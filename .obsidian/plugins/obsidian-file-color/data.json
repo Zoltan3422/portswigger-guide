@@ -339,6 +339,42 @@
     {
       "path": "Alfonz/VulnsSoFar.md",
       "color": "B1nbF8T8AagLsLKgFosFE"
+    },
+    {
+      "path": "Portswigger-guide/Payloads",
+      "color": "T00Sptzfiyh8aL6ymXTnO"
+    },
+    {
+      "path": "Portswigger-guide/Payloads/XXEPayloads.md",
+      "color": "kxygAMoeaiCbPoWylAIj7"
+    },
+    {
+      "path": "Portswigger-guide/Payloads/SSTIPayloads.md",
+      "color": "kxygAMoeaiCbPoWylAIj7"
+    },
+    {
+      "path": "Portswigger-guide/Payloads/SSRFPayloads.md",
+      "color": "kxygAMoeaiCbPoWylAIj7"
+    },
+    {
+      "path": "Portswigger-guide/Payloads/SQLInjection.md",
+      "color": "kxygAMoeaiCbPoWylAIj7"
+    },
+    {
+      "path": "Portswigger-guide/Payloads/RCE.md",
+      "color": "kxygAMoeaiCbPoWylAIj7"
+    },
+    {
+      "path": "Portswigger-guide/Payloads/InsecureDeserialization.md",
+      "color": "kxygAMoeaiCbPoWylAIj7"
+    },
+    {
+      "path": "Portswigger-guide/Payloads/FilePathTraversal.md",
+      "color": "kxygAMoeaiCbPoWylAIj7"
+    },
+    {
+      "path": "Portswigger-guide/Payloads/CookieStealer(XSS).md",
+      "color": "kxygAMoeaiCbPoWylAIj7"
     }
   ]
 }

@@ -5,6 +5,7 @@
 - [[#Server-side template injection using documentation]]
 - [[#Server-side template injection in an unknown language with a documented exploit]]
 - [[#Server-side template injection with information disclosure via user-supplied objects]]
+- _**[[#Payloads]]**_
 
 # Basic server-side template injection
 Reference: https://portswigger.net/web-security/server-side-template-injection/exploiting/lab-server-side-template-injection-basic
@@ -154,3 +155,7 @@ title: Solution
 ~~~
 8. Save the template to output the framework's secret key.
 9. Click the "Submit solution" button and submit the secret key to solve the lab.
+```
+
+# Payloads
+![[SSTIPayloads]]

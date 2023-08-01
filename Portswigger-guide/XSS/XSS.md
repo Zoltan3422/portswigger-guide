@@ -29,6 +29,7 @@
 - [[#Stored XSS into onclick event with angle brackets and double quotes HTML-encoded and single quotes and backslash escaped]]
 - [[#Reflected XSS into a template literal with angle brackets, single, double quotes, backslash and backticks Unicode-escaped]]
 - [[#Reflected XSS protected by CSP, with dangling markup attack]]
+- _**[[#Payloads]]**_
 
 ## Reflected XSS into HTML context with nothing encoded
 Reference: https://portswigger.net/web-security/cross-site-scripting/reflected/lab-html-context-nothing-encoded
@@ -570,3 +571,6 @@ form.submit()
 ~~~
 8. Click Store and Deliver exploit to victim. The user's email will be changed to ``hacker@evil-user.net``.
 ```
+
+# Payloads
+![[CookieStealer(XSS)]]

@@ -6,6 +6,8 @@
 - [[#File path traversal, traversal sequences stripped with superfluous URL-decode]]
 - [[#File path traversal, validation of start of path]]
 - [[#File path traversal, validation of file extension with null byte bypass]]
+- _**[[#Payloads]]**_
+
 
 # File path traversal, simple case
 Reference: https://portswigger.net/web-security/file-path-traversal/lab-simple
@@ -81,3 +83,6 @@ title: Solution
 	~~~
 1. Observe that the response contains the contents of the ``/etc/passwd`` file.
 ```
+
+# Payloads
+![[FilePathTraversal]]

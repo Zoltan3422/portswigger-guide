@@ -23,6 +23,7 @@ sqlmap -r mistery.txt -p category --level=3 --dump --proxy=http://127.0.0.1:8080
 - [[#SQL injection vulnerability in WHERE clause allowing retrieval of hidden data]]
 - [[#Lab: SQL injection vulnerability allowing login bypass]]
 - [[#Visible error-based SQL injection]]
+- _**[[#Payloads]]**_
 
 ## SQL injection UNION attack, determining the number of columns returned by the query
 Reference: https://portswigger.net/web-security/sql-injection/union-attacks/lab-determine-number-of-columns
@@ -478,3 +479,6 @@ title: Solution
     ~~~
 1. Log in as `administrator` using the stolen password to solve the lab.
 ```
+
+# Payloads
+![[SQLInjection]]

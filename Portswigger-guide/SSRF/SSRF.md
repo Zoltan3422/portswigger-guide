@@ -5,6 +5,7 @@
 - [[#SSRF with blacklist-based input filter]]
 - [[#SSRF with filter bypass via open redirection vulnerability]]
 - [[#Blind SSRF with out-of-band detection]]
+- _**[[#Payloads]]**_
 
 ## Basic SSRF against the local server
 Reference: https://portswigger.net/web-security/ssrf/lab-basic-ssrf-against-localhost
@@ -76,3 +77,7 @@ title: Solution
 4. Change the Referer header to use the generated Burp Collaborator domain in place of the original domain. Send the request.
 5. Go back to the Burp Collaborator client window, and click "Poll now". If you don't see any interactions listed, wait a few seconds and try again, since the server-side command is executed asynchronously.
 6. You should see some DNS and HTTP interactions that were initiated by the application as the result of your payload.
+```
+
+# Payloads
+![[SSRFPayloads]]

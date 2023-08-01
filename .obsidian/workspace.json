@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "5727cb43705c4b3f",
+        "id": "b558324003aff947",
         "type": "tabs",
         "children": [
           {
-            "id": "a804a9ccaea210ee",
+            "id": "102981ae839bbc27",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -69,7 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 224.5
+    "width": 327.5
   },
   "right": {
     "id": "fd7ec17a1c3be3c8",
@@ -153,38 +153,39 @@
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "homepage:Open homepage": false,
-      "markdown-importer:Open format converter": false
+      "markdown-importer:Open format converter": false,
+      "homepage:Open homepage": false
     }
   },
-  "active": "a804a9ccaea210ee",
+  "active": "102981ae839bbc27",
   "lastOpenFiles": [
-    "Portswigger-guide/XSS/XSS.md",
+    "Portswigger-guide/XXE/PAYLOADS.md",
     "Portswigger-guide/XXE/XXE.md",
+    "Portswigger-guide/Server side template injection/Server side template injection.md",
+    "Portswigger-guide/SSRF/SSRF.md",
+    "Portswigger-guide/SQL Injection/SQL Injection.md",
+    "Portswigger-guide/Insecure deserialization/Insecure deserialization.md",
+    "Portswigger-guide/Payloads/FilePathTraversal.md",
+    "Portswigger-guide/XSS/XSS.md",
     "Portswigger-guide/XSS/Portswigger-cheatsheet.txt.md",
+    "Portswigger-guide/Payloads/SSRFPayloads.md",
+    "Portswigger-guide/Directory Traversal/Directory traversal.md",
+    "Portswigger-guide/Payloads/CookieStealer(XSS).md",
+    "Portswigger-guide/Payloads/SSTIPayloads.md",
+    "Portswigger-guide/Payloads/XXEPayloads.md",
+    "Portswigger-guide/Payloads/SQLInjection.md",
+    "Portswigger-guide/Payloads/RCE.md",
+    "Portswigger-guide/Payloads/InsecureDeserialization.md",
     "Portswigger-guide/Home.md",
+    "Portswigger-guide/Payloads",
+    "Portswigger-guide/Http Request Smuggling/Http request smuggling.md",
+    "Portswigger-guide/File Upload Vulnerabilities/File upload vulnerabilities.md",
+    "Portswigger-guide/File Upload Vulnerabilities/exploits/file_get_contents.php.md",
+    "Portswigger-guide/PortSwigger-Base.md",
+    "Portswigger-guide/Business-logic/Business-logic.md",
     "Portswigger-guide/Prototype Pollution/Prototype pollution.md",
     "Portswigger-guide/Web cache poisoning/Web cache poisoning.md",
     "Portswigger-guide/WebSockets/WebSockets.md",
-    "Portswigger-guide/XXE/PAYLOADS.md",
-    "Portswigger-guide/SQL Injection/SQL Injection.md",
-    "Portswigger-guide/SSRF/SSRF.md",
-    "Portswigger-guide/Server side template injection/Server side template injection.md",
-    "Alfonz/VulnsSoFar.md",
-    "Portswigger-guide/PortSwigger-Base.md",
-    "Portswigger-guide/Authentication/Authentication.md",
-    "Alfonz/ports/80_443/nikto.md",
-    "Alfonz/ports/80_443/SQLi.md",
-    "Alfonz/ports/80_443/VulnDB.md",
-    "Alfonz/ports/OpenPorts.md",
-    "Alfonz/Notes.md",
-    "Portswigger-guide/Server side template injection/TIPS.md",
-    "Alfonz/ports/80_443/endpoints/gobuster.md",
-    "Alfonz/ports/80_443/endpoints/Endpoints.md",
-    "Alfonz/ports/80_443/burp/BurpActiveScans.md",
-    "Alfonz/ports/Nmap scan.md",
-    "Portswigger-guide/Http Host Header/Http host header.md",
-    "Portswigger-guide/CORS/CORS.md",
     "Portswigger-guide/GraphQL/Untitled",
     "Portswigger-guide/GraphQL",
     "Portswigger-guide/Prototype Pollution",
@@ -195,7 +196,6 @@
     "Alfonz/ports/80_443/burp",
     "Alfonz/ports/80_443",
     "Alfonz/ports/80_443/endpoints",
-    "Alfonz/ports",
-    "Alfonz"
+    "Alfonz/ports"
   ]
 }

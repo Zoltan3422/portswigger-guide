@@ -8,6 +8,7 @@
 - [[#Exploiting Java deserialization with Apache Commons]]
 - [[#Exploiting PHP deserialization with a pre-built gadget chain]]
 - [[#Exploiting Ruby deserialization using a documented gadget chain]]
+- _**[[#Payloads]]**_
 
 # Modifying serialized objects
 Reference: https://portswigger.net/web-security/deserialization/exploiting/lab-deserialization-modifying-serialized-objects
@@ -199,3 +200,6 @@ puts Marshal.load(payload)
 A good online ruby compiler:
 https://www.onlinegdb.com/online_ruby_compiler
 ```
+
+# Payloads
+![[InsecureDeserialization]]
