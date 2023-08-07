@@ -51,6 +51,22 @@ The tools needed (other than Burp Pro) to complete the labs.
 | [[File upload vulnerabilities]] |  |  | [[File upload vulnerabilities \| ✔️]] |
 | [[JWT]] | [[Jwt \| ✔️]] | [[Jwt \| ✔️]] |  |
 
+## ‼️ Before the exam
+
+- Install every recommended plugin
+- Download the username and password wordlists
+
+## ⚠️ During Exam
+
+1. Visit every endpoint
+2. *Active scan* every endpoint
+3. Search for *.git* directory and use the *Content Discovery* feature built-in
+4. Look for inline JavaScript
+
+Futhermore:
+- Use the XSS cheatsheet and Stage checklist
+- Use the provided payloads
+
 ## 💭 Cheat sheets
 
 [Burp Suite Certified Practitioner Exam Review](https://micahvandeusen.com/burp-suite-certified-practitioner-exam-review/)
@@ -65,10 +81,10 @@ The tools needed (other than Burp Pro) to complete the labs.
 - Hackvector
 - JWT Editor Keys
 - Param Miner
-- Turbo Intruder
+- (Turbo Intruder)
 - Java Deserialization Scanner
 - ActiveScan++
 
-### GitHub repo's used
+### GitHub repos used
 https://github.com/botesjuan/Burp-Suite-Certified-Practitioner-Exam-Study/tree/main/payloads
 
