@@ -81,10 +81,9 @@ Futhermore:
 - Hackvector
 - JWT Editor Keys
 - Param Miner
-- (Turbo Intruder)
 - Java Deserialization Scanner
 - ActiveScan++
 
-### GitHub repos used
+## GitHub repos used
 https://github.com/botesjuan/Burp-Suite-Certified-Practitioner-Exam-Study/tree/main/payloads
 
