@@ -1,8 +1,8 @@
-# 🧪 PortSwigger Labs and BSCP
+# 🧪 PortSwigger Labs
 
 This repo contains the solutions for the PortSwigger Labs available in the **Academy** section of their website: https://portswigger.net/web-security/all-labs
 
-## 💭 Why
+## ❓ Why
 This repo has been created to keep in a single place all the solutions of the labs. It should be helpful when preparing for the [*Burp Suite Certified Practitioner*](https://portswigger.net/web-security/certification).
 
 ## 💭 Cheat sheets
