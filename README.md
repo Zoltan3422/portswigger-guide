@@ -3,7 +3,7 @@
 This repo contains the solutions for the PortSwigger Labs available in the **Academy** section of their website: https://portswigger.net/web-security/all-labs
 
 ## Why
-This repo has been created to keep in a single place all the solutions of the labs. It should be helpful when preparing for the *Burp Suite Certified Practitioner* (https://portswigger.net/web-security/certification).
+This repo has been created to keep in a single place all the solutions of the labs. It should be helpful when preparing for the [*Burp Suite Certified Practitioner*](https://portswigger.net/web-security/certification).
 
 ## 💭 Cheat sheets
 - [Cross-Site Scripting (XSS) Cheat Sheet - 2023 Edition | Web Security Academy](https://portswigger.net/web-security/cross-site-scripting/cheat-sheet)
