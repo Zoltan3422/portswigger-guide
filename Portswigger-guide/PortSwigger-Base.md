@@ -68,12 +68,10 @@ Futhermore:
 - Use the provided payloads
 
 ## 💭 Cheat sheets
+- [Cross-Site Scripting (XSS) Cheat Sheet - 2023 Edition | Web Security Academy](https://portswigger.net/web-security/cross-site-scripting/cheat-sheet)
+- [PayloadsAllTheThings](https://github.com/swisskyrepo/PayloadsAllTheThings)
+- [HackTricks](https://book.hacktricks.xyz/welcome/readme)
 
-[Burp Suite Certified Practitioner Exam Review](https://micahvandeusen.com/burp-suite-certified-practitioner-exam-review/)
-
-[Cross-Site Scripting (XSS) Cheat Sheet - 2023 Edition | Web Security Academy](https://portswigger.net/web-security/cross-site-scripting/cheat-sheet)
-
-[BSCP Methodology](http://bscpcheatsheet.gitbook.io/)
 
 ## 🛫 Recommended plugins
 
@@ -84,6 +82,8 @@ Futhermore:
 - Java Deserialization Scanner
 - ActiveScan++
 
-## GitHub repos used
-https://github.com/botesjuan/Burp-Suite-Certified-Practitioner-Exam-Study/tree/main/payloads
+## GitHub repos and websites used
+- [Payloads](https://micahvandeusen.com/burp-suite-certified-practitioner-exam-review/)
+- [Burp Suite Certified Practitioner Exam Review](https://micahvandeusen.com/burp-suite-certified-practitioner-exam-review/)
+- [BSCP Methodology](http://bscpcheatsheet.gitbook.io/)
 
