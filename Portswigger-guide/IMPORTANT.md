@@ -14,11 +14,12 @@
 # Initial
 1. Check ***/.git***
 2. Check ***/robots.txt***
-3. Visit every endpoint
-4. Active scan every endpoint
-5. Content Discovery
-6. Check for inline Javascript
-7. Check the loaded Javascript files
+3. Check ***/api***
+4. Visit every endpoint
+5. Active scan every endpoint
+6. Content Discovery
+7. Check for inline Javascript
+8. Check the loaded Javascript files
 
 # Stage1
 - [ ] [[XSS]]
