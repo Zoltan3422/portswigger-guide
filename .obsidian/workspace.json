@@ -4,17 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "b558324003aff947",
+        "id": "1f55eeafea499ade",
         "type": "tabs",
         "children": [
           {
-            "id": "102981ae839bbc27",
+            "id": "b9e446954613802c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Portswigger-guide/PortSwigger-Base.md",
-                "mode": "preview",
+                "file": "Portswigger-guide/IMPORTANT.md",
+                "mode": "source",
                 "source": true
               }
             }
@@ -69,7 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 327.5
+    "width": 249.5
   },
   "right": {
     "id": "fd7ec17a1c3be3c8",
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Portswigger-guide/PortSwigger-Base.md",
+                "file": "Portswigger-guide/IMPORTANT.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Portswigger-guide/PortSwigger-Base.md",
+                "file": "Portswigger-guide/IMPORTANT.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Portswigger-guide/PortSwigger-Base.md"
+                "file": "Portswigger-guide/IMPORTANT.md"
               }
             }
           },
@@ -157,34 +157,34 @@
       "homepage:Open homepage": false
     }
   },
-  "active": "102981ae839bbc27",
+  "active": "b9e446954613802c",
   "lastOpenFiles": [
-    "Portswigger-guide/CORS/CORS.md",
+    "2023-07-03.md",
+    "Portswigger-guide/IMPORTANT.md",
+    "2023-08-02.md",
+    "Portswigger-guide/Home.md",
+    "Untitled.md",
+    "Portswigger-guide/SQL Injection/SQL Injection.md",
+    "Portswigger-guide/SQL Injection/cheatsheet.md",
+    "Portswigger-guide/Payloads/SQLInjection.md",
+    "Home.md",
+    "Portswigger-guide/Payloads/Usernames.md",
+    "Portswigger-guide/Payloads/Passwords.md",
+    "Portswigger-guide/Web cache poisoning/Web cache poisoning.md",
+    "Portswigger-guide/Web cache poisoning/TIPS.md",
+    "Portswigger-guide/XSS/XSS.md",
+    "Portswigger-guide/XXE/XXE.md",
+    "README.md",
     "Portswigger-guide/PortSwigger-Base.md",
+    "Portswigger-guide/CORS/CORS.md",
     "Portswigger-guide/Clickjacking/Clickjacking.md",
     "Portswigger-guide/Directory Traversal/Directory traversal.md",
-    "Portswigger-guide/Payloads/SQLInjection.md",
     "Portswigger-guide/Payloads/FilePathTraversal.md",
     "Portswigger-guide/Payloads/CookieStealer(XSS).md",
     "Portswigger-guide/XXE/PAYLOADS.md",
-    "Portswigger-guide/XXE/XXE.md",
-    "Portswigger-guide/SQL Injection/cheatsheet.md",
-    "Portswigger-guide/SQL Injection/SQL Injection.md",
     "Portswigger-guide/Server side template injection/TIPS.md",
     "Portswigger-guide/Http Request Smuggling/Http request smuggling.md",
     "Portswigger-guide/File Upload Vulnerabilities/File upload vulnerabilities.md",
-    "Portswigger-guide/JWT/Jwt.md",
-    "Portswigger-guide/Payloads/HttpRequestSmugglingPayloads.md",
-    "Portswigger-guide/Payloads/InsecureDeserialization.md",
-    "Portswigger-guide/Http Request Smuggling/lib/request.txt.md",
-    "Portswigger-guide/Http Request Smuggling/lib/countchar.py.md",
-    "Portswigger-guide/File Upload Vulnerabilities/exploits/file_get_contents.php.md",
-    "Portswigger-guide/Clickjacking/exploits/Base.md",
-    "Portswigger-guide/Clickjacking/exploits/Csrf token protection.md",
-    "Portswigger-guide/Clickjacking/exploits/Dom based xss.md",
-    "Portswigger-guide/Clickjacking/exploits/Frame buster script.md",
-    "Portswigger-guide/Clickjacking/exploits/Input data prefilled.md",
-    "Portswigger-guide/Clickjacking/exploits/Multistep.md",
     "Portswigger-guide/Payloads",
     "Portswigger-guide/GraphQL/Untitled",
     "Portswigger-guide/GraphQL",

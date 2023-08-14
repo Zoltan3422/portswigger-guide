@@ -1,5 +1,6 @@
 # MUST KNOWN'S
 ```ad-success
+title: MUST
 - **Default Credentials**:
 	- Low-privilige: carlos
 	- Admin: administrator
@@ -12,14 +13,15 @@
 	- [[Passwords]]
 ```
 # Initial
-1. Check ***/.git***
-2. Check ***/robots.txt***
-3. Check ***/api***
-4. Visit every endpoint
-5. Active scan every endpoint
-6. Content Discovery
-7. Check for inline Javascript
-8. Check the loaded Javascript files
+1. Use thorough scan
+2. Check ***/.git***
+3. Check ***/robots.txt***
+4. Check ***/api***
+5. Visit every endpoint
+6. Active scan every endpoint
+7. Content Discovery
+8. Check for inline Javascript
+9. Check the loaded Javascript files
 
 # Stage1
 - [ ] [[XSS]]
