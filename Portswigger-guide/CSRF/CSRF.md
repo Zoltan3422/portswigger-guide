@@ -132,7 +132,7 @@ title: Solution
 6. Back in the original browser, perform a search, send the resulting request to Burp Repeater, and observe that the search term gets reflected in the Set-Cookie header. Since the search function has no CSRF protection, you can use this to inject cookies into the victim user's browser.
 7. Create a URL that uses this vulnerability to inject your csrfKey cookie into the victim's browser:
 ~~~
-/?search=test%0d%0aSet-Cookie:%20csrfKey=your-key
+/?search=test%0d%0aSet-Cookie:%20csrfKey=your-key%3b%20SameSite=None
 ~~~
 8. Create and host a proof of concept exploit as described in the solution to the CSRF vulnerability with no defenses lab, ensuring that you include your CSRF token. The exploit should be created from the email change request.
 9. Remove the ``script`` block, and instead add the following code to inject the cookie:

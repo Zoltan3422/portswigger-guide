@@ -25,17 +25,17 @@ title: MUST
 
 # Stage1
 - [ ] [[XSS]]
-- [ ] [[CSRF]]
-- [ ] [[Clickjacking]]
-- [ ] [[DOM-based]]
-- [ ] [[CORS]]
-- [ ] [[Http request smuggling]]
-- [ ] [[Access-control]]
-- [ ] [[Authentication]]
-- [ ] [[Web cache poisoning]]
-- [ ] [[Http host header]]
-- [ ] [[Oauth authentication]]
-- [ ] [[Jwt]]
+- [x] [[CSRF]]
+- [x] [[Clickjacking]]
+- [x] [[DOM-based]]
+- [x] [[CORS]]
+- [x] [[Http request smuggling]]
+- [x] [[Access-control]]
+- [x] [[Authentication]]
+- [x] [[Web cache poisoning]]
+- [x] [[Http host header]]
+- [x] [[Oauth authentication]]
+- [x] [[Jwt]]
 
 # Stage2
 - [ ] [[XSS]]
@@ -52,7 +52,7 @@ title: MUST
 - [ ] [[Jwt]]
 
 # Stage3
-- [ ] [[SQLInjection]]
+- [x] [[SQLInjection]]
 - [ ] [[XXE]]
 - [ ] [[SSRF]]
 - [ ] [[Os command  injection]]
