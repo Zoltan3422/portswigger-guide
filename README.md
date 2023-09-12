@@ -15,3 +15,4 @@ This repo has been created to keep in a single place all the solutions of the la
 - [Burp Suite Certified Practitioner Exam Review](https://micahvandeusen.com/burp-suite-certified-practitioner-exam-review/)
 - [BSCP Methodology](http://bscpcheatsheet.gitbook.io/)
 - [MUST FOR EXAM](https://github.com/DingyShark/BurpSuiteCertifiedPractitioner)
+- [MUST FOR EXAM 2](https://github.com/botesjuan/Burp-Suite-Certified-Practitioner-Exam-Study)
