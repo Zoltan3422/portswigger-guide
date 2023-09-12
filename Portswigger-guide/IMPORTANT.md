@@ -1,4 +1,4 @@
-# MUST KNOWN'S
+# MUST KNOWS
 ```ad-success
 title: MUST
 - **Default Credentials**:
@@ -12,6 +12,9 @@ title: MUST
 	- [[Usernames]]
 	- [[Passwords]]
 ```
+
+![3 stages](3stages.png)
+
 # Initial
 1. Use thorough scan
 2. Check ***/.git***
