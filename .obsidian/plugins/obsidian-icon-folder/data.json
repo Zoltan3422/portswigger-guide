@@ -6,11 +6,11 @@
     "emojiStyle": "none",
     "iconColor": null,
     "recentlyUsedIcons": [
+      "TiFolderFilled",
       "RiErrorWarningFill",
       "TiNotes",
       "TiCode",
-      "FasBookOpen",
-      "RiFolderFill"
+      "FasBookOpen"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -107,5 +107,11 @@
   "Portswigger-guide/Payloads/SSRFPayloads.md": "TiCode",
   "Portswigger-guide/Payloads/SSTIPayloads.md": "TiCode",
   "Portswigger-guide/Payloads/XXEPayloads.md": "TiCode",
-  "Portswigger-guide/Payloads/HttpRequestSmugglingPayloads.md": "TiCode"
+  "Portswigger-guide/Payloads/HttpRequestSmugglingPayloads.md": "TiCode",
+  "Portswigger-guide/Race Conditions": "TiFolderFilled",
+  "Portswigger-guide/Race Conditions/Race Conditions.md": "TiNotes",
+  "Portswigger-guide/NoSQL": "TiFolderFilled",
+  "Portswigger-guide/NoSQL/NoSQL Injection.md": "TiNotes",
+  "Portswigger-guide/API Testing": "TiFolderFilled",
+  "Portswigger-guide/API Testing/API Testing.md": "TiNotes"
 }

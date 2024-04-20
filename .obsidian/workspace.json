@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "923ea31291b887b8",
+        "id": "30d730b228a85a45",
         "type": "tabs",
         "children": [
           {
-            "id": "5a747ce860df3be2",
+            "id": "79c310cb8760af02",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Portswigger-guide/CSRF/CSRF.md",
+                "file": "Portswigger-guide/SQL Injection/SQL Injection.md",
                 "mode": "preview",
                 "source": true
               }
@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "svg",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Portswigger-guide/CSRF/CSRF.md",
+                "file": "Portswigger-guide/SQL Injection/SQL Injection.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Portswigger-guide/CSRF/CSRF.md",
+                "file": "Portswigger-guide/SQL Injection/SQL Injection.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Portswigger-guide/CSRF/CSRF.md"
+                "file": "Portswigger-guide/SQL Injection/SQL Injection.md"
               }
             }
           },
@@ -157,34 +157,38 @@
       "homepage:Open homepage": false
     }
   },
-  "active": "5a747ce860df3be2",
+  "active": "79c310cb8760af02",
   "lastOpenFiles": [
-    "Home.md",
-    "Portswigger-guide/IMPORTANT.md",
-    "Portswigger-guide/XSS/Portswigger-cheatsheet.txt.md",
+    "Portswigger-guide/Clickjacking/Clickjacking.md",
     "Portswigger-guide/XSS/XSS.md",
-    "Portswigger-guide/Payloads/SSTIPayloads.md",
-    "Portswigger-guide/PortSwigger-Base.md",
-    "Portswigger-guide/XXE/XXE.md",
-    "Portswigger-guide/SQL Injection/SQL Injection.md",
-    "Portswigger-guide/Http Request Smuggling/Http request smuggling.md",
-    "Portswigger-guide/GraphQL/Graphql.md",
-    "Portswigger-guide/Http Host Header/Http host header.md",
-    "Portswigger-guide/File Upload Vulnerabilities/File upload vulnerabilities.md",
     "Portswigger-guide/DOM-based/DOM-based.md",
-    "Portswigger-guide/Directory Traversal/Directory traversal.md",
-    "Portswigger-guide/CSRF/CSRF.md",
-    "Portswigger-guide/CORS/CORS.md",
+    "Portswigger-guide/IMPORTANT.md",
+    "Portswigger-guide/Payloads/Usernames.md",
+    "Portswigger-guide/Payloads/Passwords.md",
+    "Portswigger-guide/Authentication/Authentication.md",
+    "Portswigger-guide/Payloads/CookieStealer(XSS).md",
+    "Portswigger-guide/XSS/Portswigger-cheatsheet.txt.md",
     "Portswigger-guide/Business-logic/Business-logic.md",
     "Portswigger-guide/Web cache poisoning/Web cache poisoning.md",
-    "Portswigger-guide/WebSockets/WebSockets.md",
-    "Portswigger-guide/Authentication/Authentication.md",
-    "Portswigger-guide/Access-control/Access-control.md",
-    "Portswigger-guide/Http Request Smuggling/lib/request.txt.md",
-    "Portswigger-guide/Payloads/HttpRequestSmugglingPayloads.md",
-    "Portswigger-guide/Payloads/Passwords.md",
-    "Portswigger-guide/Clickjacking/Clickjacking.md",
-    "Portswigger-guide/Payloads/CookieStealer(XSS).md",
+    "Portswigger-guide/Web cache poisoning/TIPS.md",
+    "Portswigger-guide/Insecure deserialization/Insecure deserialization.md",
+    "Portswigger-guide/Http Host Header/Http host header.md",
+    "Portswigger-guide/Server side template injection/Server side template injection.md",
+    "Portswigger-guide/OS Command Injection/Os command  injection.md",
+    "Portswigger-guide/NoSQL/NoSQL Injection.md",
+    "Portswigger-guide/Race Conditions/Race Conditions.md",
+    "Portswigger-guide/Directory Traversal/Directory traversal.md",
+    "README.md",
+    "Portswigger-guide/API Testing/API Testing.md",
+    "Portswigger-guide/API Testing",
+    "Portswigger-guide/NoSQL",
+    "payloads/Untitled.md",
+    "Portswigger-guide/CSRF/CSRF.md",
+    "Portswigger-guide/OAuth Authentication/Oauth authentication.md",
+    "Portswigger-guide/Prototype Pollution/Prototype pollution.md",
+    "Portswigger-guide/Race Conditions",
+    "Portswigger-guide/3stages.png",
+    "Home.md",
     "payloads/testpoly.php",
     "Portswigger-guide/Payloads",
     "Portswigger-guide/GraphQL/Untitled",
@@ -193,9 +197,6 @@
     "Portswigger-guide/JWT",
     "Portswigger-guide/Insecure deserialization",
     "Pasted image 20230706104132.png",
-    "Pasted image 20230706095544.png",
-    "Alfonz/ports/80_443/burp",
-    "Alfonz/ports/80_443",
-    "Alfonz/ports/80_443/endpoints"
+    "Pasted image 20230706095544.png"
   ]
 }
